@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 860" role="img" aria-labelledby="title description">
+  <title id="title">AI progress and the Jev opportunity</title>
+  <desc id="description">An elegant timeline from 2021 to 2027 traces the rise of modern AI, from instruction tuning and ChatGPT to reasoning models and coding agents. The path leads to the AI industry, while a branch highlights Jev and an overlooked use case.</desc>
+  <defs>
+    <linearGradient id="growth" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7D8FFF"/>
+      <stop offset="0.7" stop-color="#82A4FF"/>
+      <stop offset="1" stop-color="#B49AFF"/>
+    </linearGradient>
+    <linearGradient id="industry-card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B2540"/>
+      <stop offset="1" stop-color="#141B31"/>
+    </linearGradient>
+    <linearGradient id="jev-card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#15332F"/>
+      <stop offset="1" stop-color="#122722"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="73%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#20284A" stop-opacity="0.52"/>
+      <stop offset="1" stop-color="#0B1020" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-shadow" x="-20%" y="-25%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#02040A" flood-opacity="0.38"/>
+    </filter>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M1 1 9 5 1 9" fill="none" stroke="#B49AFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M1 1 9 5 1 9" fill="none" stroke="#66E0B6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1 9 5 1 9" fill="none" stroke="#E9B96C" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="1440" height="860" rx="28" fill="#0B1020"/>
+  <rect width="1440" height="860" rx="28" fill="url(#glow)"/>
+
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+    <text x="112" y="92" fill="#A8B2C8" font-size="15" font-weight="650" letter-spacing="3.2">A DIFFERENT LENS ON AI</text>
+    <text x="108" y="157" fill="#F4F6FC" font-size="48" font-weight="650" letter-spacing="-1.8">From model progress to meaningful work</text>
+    <text x="112" y="198" fill="#A8B2C8" font-size="19" font-weight="400">The capability curve keeps climbing. There’s still room to notice what it can do for people.</text>
+
+    <!-- Industry destination. -->
+    <g filter="url(#soft-shadow)">
+      <rect x="1030" y="250" width="306" height="158" rx="24" fill="url(#industry-card)" stroke="#364160" stroke-width="1.5"/>
+      <circle cx="1071" cy="293" r="18" fill="#8293FF" fill-opacity="0.16"/>
+      <path d="M1063 300v-13l8-5 8 5v13m-20 0h24m-15-8h6m-6-5h6" fill="none" stroke="#AAB5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="1104" y="291" fill="#9EAAD0" font-size="12" font-weight="700" letter-spacing="2">THE DESTINATION</text>
+      <text x="1060" y="345" fill="#F5F6FF" font-size="29" font-weight="650" letter-spacing="-0.5">AI industry</text>
+      <text x="1060" y="377" fill="#AFB8CF" font-size="16">More capable systems, at scale</text>
+    </g>
+
+    <!-- Timeline axis and date markers. -->
+    <path d="M112 560H951" fill="none" stroke="#45506A" stroke-width="2"/>
+    <g fill="#0B1020" stroke="#73809D" stroke-width="2">
+      <circle cx="128" cy="560" r="5"/><circle cx="260" cy="560" r="5"/>
+      <circle cx="392" cy="560" r="5"/><circle cx="524" cy="560" r="5"/>
+      <circle cx="656" cy="560" r="5"/><circle cx="788" cy="560" r="5"/>
+      <circle cx="920" cy="560" r="5"/>
+    </g>
+    <g fill="#9AA5BC" font-size="15" font-weight="550" text-anchor="middle">
+      <text x="128" y="598">2021</text><text x="260" y="598">2022</text>
+      <text x="392" y="598">2023</text><text x="524" y="598">2024</text>
+      <text x="656" y="598">2025</text><text x="788" y="598">2026</text>
+      <text x="920" y="598">2027</text>
+    </g>
+
+    <!-- The rising capability path. -->
+    <path d="M128 554 C207 554 228 555 260 554 C288 552 296 528 309 482 C321 439 339 421 377 421 H505 C526 421 533 408 542 393 C550 379 561 371 583 371 H704 C723 371 730 357 738 339 C746 320 761 308 786 308 H889 C914 308 927 296 941 280 C956 263 974 261 997 261 H1018" fill="none" stroke="url(#growth)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+
+    <!-- Major capability shifts. -->
+    <g>
+      <circle cx="260" cy="554" r="10" fill="#0B1020" stroke="#D69BF3" stroke-width="3"/>
+      <circle cx="524" cy="371" r="10" fill="#0B1020" stroke="#91A4FF" stroke-width="3"/>
+      <circle cx="788" cy="308" r="10" fill="#0B1020" stroke="#91A4FF" stroke-width="3"/>
+    </g>
+
+    <!-- Era labels sit near the relevant part of the curve. -->
+    <g>
+      <rect x="350" y="438" width="130" height="34" rx="17" fill="#1B2340" stroke="#364365"/>
+      <circle cx="370" cy="455" r="4" fill="#94A2FF"/>
+      <text x="384" y="461" fill="#E0E5FF" font-size="15" font-weight="600">ChatGPT</text>
+      <rect x="655" y="319" width="150" height="34" rx="17" fill="#1B2340" stroke="#364365"/>
+      <circle cx="675" cy="336" r="4" fill="#94A2FF"/>
+      <text x="689" y="342" fill="#E0E5FF" font-size="15" font-weight="600">Coding agents</text>
+    </g>
+
+    <!-- Milestone cards below the time axis. -->
+    <g>
+      <rect x="148" y="620" width="250" height="104" rx="18" fill="#17182F" stroke="#4D3D66" stroke-width="1.4"/>
+      <text x="172" y="654" fill="#C69AE5" font-size="12" font-weight="700" letter-spacing="1.8">2022 · ALIGNMENT</text>
+      <text x="172" y="687" fill="#F3EDF8" font-size="21" font-weight="620">Instruction tuning</text>
+      <text x="172" y="710" fill="#B3A7C3" font-size="15">GPT · RLHF</text>
+
+      <rect x="418" y="620" width="275" height="104" rx="18" fill="#151C33" stroke="#364466" stroke-width="1.4"/>
+      <text x="442" y="654" fill="#AAB7FF" font-size="12" font-weight="700" letter-spacing="1.8">2024 · REASONING</text>
+      <text x="442" y="687" fill="#F0F2FC" font-size="21" font-weight="620">Reasoning models</text>
+      <text x="442" y="710" fill="#AAB3C9" font-size="15">o1 · test-time compute</text>
+    </g>
+
+    <!-- A distinct branch from the timeline to Jev. -->
+    <path d="M788 560 C815 560 835 562 844 580 C850 594 850 610 850 624 C850 642 862 650 880 650 H1008" fill="none" stroke="#66E0B6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-green)"/>
+    <circle cx="788" cy="560" r="10" fill="#0B1020" stroke="#66E0B6" stroke-width="3"/>
+
+    <!-- A subtle two-way relationship: the broader industry overlooks this use case. -->
+    <path d="M1182 422v64" fill="none" stroke="#E9B96C" stroke-width="2" stroke-dasharray="4 6" marker-start="url(#arrow-amber)" marker-end="url(#arrow-amber)"/>
+    <rect x="1211" y="435" width="116" height="38" rx="19" fill="#28241F" stroke="#594A32"/>
+    <text x="1269" y="459" text-anchor="middle" fill="#EBC887" font-size="11" font-weight="700" letter-spacing="1.2">OVERLOOKED</text>
+
+    <!-- Jev destination. -->
+    <g filter="url(#soft-shadow)">
+      <rect x="1030" y="524" width="306" height="184" rx="24" fill="url(#jev-card)" stroke="#306356" stroke-width="1.5"/>
+      <circle cx="1071" cy="567" r="18" fill="#62DDB3" fill-opacity="0.15"/>
+      <path d="M1061 567h20m-10-10v20m-7-3 7-7 7 7" fill="none" stroke="#83E6C3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="1104" y="565" fill="#92C6B2" font-size="12" font-weight="700" letter-spacing="2">A HUMAN USE CASE</text>
+      <text x="1060" y="619" fill="#F0FFF8" font-size="29" font-weight="650" letter-spacing="-0.5">Jev <tspan fill="#93CDB7" font-size="20" font-weight="550">/ RLCD</tspan></text>
+      <text x="1060" y="655" fill="#C0D9CF" font-size="16">A big use case, still overlooked.</text>
+      <path d="M1060 673h137" stroke="#66E0B6" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <text x="112" y="796" fill="#737F98" font-size="13" font-weight="500" letter-spacing="0.3">A view of changing capabilities — and the opportunities they leave open.</text>
+    <text x="1336" y="796" text-anchor="end" fill="#66728B" font-size="12" font-weight="650" letter-spacing="1.8">JEV · RLCD</text>
+  </g>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 620" role="img" aria-labelledby="title description">
+  <title id="title">Jev on the AI timeline</title>
+  <desc id="description">A hand-drawn timeline from 2021 to 2027. A blue path rises from ChatGPT through coding agents toward the AI industry, while a green branch from 2026 points to Jev (RLCD) and the neglected use case.</desc>
+
+  <rect width="1400" height="620" fill="#050505"/>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- The main axis and its lightly irregular year marks. -->
+    <path d="M90 314 C277 312 379 317 524 314 S800 310 959 315 L1048 316" stroke="#f6f5f2" stroke-width="4"/>
+    <path d="m1039 307 15 9-16 8" stroke="#f6f5f2" stroke-width="4"/>
+    <g stroke="#969696" stroke-width="3">
+      <path d="m171 304 3 20"/>
+      <path d="m311 304 4 22"/>
+      <path d="m451 304 4 21"/>
+      <path d="m591 304 4 20"/>
+      <path d="m731 304 3 21"/>
+      <path d="m871 305 3 20"/>
+      <path d="m1011 307 2 18"/>
+    </g>
+
+    <!-- The blue path follows the growth shown in the reference. -->
+    <path d="M102 313 C176 314 261 313 332 314 C349 313 350 270 372 240 C386 222 399 219 431 219 L573 218 Q591 218 596 211 L610 192 Q619 178 639 178 L705 176 Q719 176 719 164 L730 138 Q738 121 755 112 C789 102 816 105 849 101 Q879 97 906 98 L1014 98" stroke="#8292ff" stroke-width="4"/>
+    <path d="m1006 88 20 10-18 12" stroke="#8292ff" stroke-width="5"/>
+
+    <!-- Two model milestones are tied to the axis. -->
+    <g stroke="#ef6ce8" stroke-width="3.5" stroke-dasharray="10 11">
+      <path d="M333 281 330 424"/>
+      <path d="M660 274 658 422"/>
+    </g>
+
+    <!-- Coding agents sit on the blue path. -->
+    <path d="M744 172 Q765 176 784 173 L784 190 Q761 195 741 190 Z" stroke="#f0ed80" stroke-width="3"/>
+
+    <!-- Jev branches from the main timeline. -->
+    <path d="M887 315 Q906 323 907 346 L913 390 Q917 434 955 435 L1022 435" stroke="#77f691" stroke-width="4"/>
+    <path d="m1012 426 20 9-19 10" stroke="#77f691" stroke-width="5"/>
+
+    <!-- The vertical arrow connects Jev's use case to the industry. -->
+    <path d="M1102 139 C1100 197 1101 268 1102 377" stroke="#f9ad43" stroke-width="3.5"/>
+    <path d="m1092 151 10-15 10 15 M1092 367 l10 16 10-16" stroke="#f9ad43" stroke-width="3.5"/>
+  </g>
+
+  <g font-family="Chalkboard SE, Comic Sans MS, Bradley Hand, cursive" font-weight="700" paint-order="stroke fill" stroke="#050505" stroke-width="2" stroke-linejoin="round">
+    <g fill="#868686" font-size="29" text-anchor="middle">
+      <text x="171" y="367" transform="rotate(-4 171 367)">2021</text>
+      <text x="311" y="367" transform="rotate(-3 311 367)">2022</text>
+      <text x="451" y="367" transform="rotate(-3 451 367)">2023</text>
+      <text x="591" y="367" transform="rotate(-2 591 367)">2024</text>
+      <text x="731" y="367" transform="rotate(-3 731 367)">2025</text>
+      <text x="871" y="367" transform="rotate(-3 871 367)">2026</text>
+      <text x="1011" y="367" transform="rotate(-2 1011 367)">2027</text>
+    </g>
+
+    <text x="382" y="194" fill="#f5f078" font-size="31" transform="rotate(-4 382 194)">ChatGPT</text>
+    <text x="751" y="223" fill="#f5f078" font-size="28" transform="rotate(-3 751 223)">Coding Agents</text>
+    <text x="1038" y="109" fill="#8795ff" font-size="40" transform="rotate(-2 1038 109)">AI Industry</text>
+
+    <g fill="#f278e9" font-size="29" text-anchor="middle">
+      <text x="330" y="460" transform="rotate(-2 330 460)">Instruct</text>
+      <text x="330" y="493" transform="rotate(-2 330 493)">GPT</text>
+      <text x="330" y="528" transform="rotate(-2 330 528)">(RLHF)</text>
+      <text x="658" y="459" transform="rotate(-2 658 459)">Reasoning</text>
+      <text x="658" y="493" transform="rotate(-2 658 493)">Model</text>
+      <text x="658" y="528" transform="rotate(-2 658 528)">o1</text>
+      <text x="658" y="562" transform="rotate(-2 658 562)">(Test-Time)</text>
+      <text x="658" y="595" transform="rotate(-2 658 595)">Compute</text>
+    </g>
+
+    <text x="1046" y="443" fill="#79f698" font-size="38" transform="rotate(-2 1046 443)">Jev (RLCD)</text>
+    <g fill="#f8f8f8" font-size="31">
+      <text x="1037" y="499" transform="rotate(-3 1037 499)">“we’re neglecting</text>
+      <text x="1052" y="549" transform="rotate(-2 1052 549)">a</text>
+      <text x="1091" y="549" transform="rotate(-2 1091 549)">BIG</text>
+      <text x="1160" y="549" transform="rotate(-2 1160 549)">use case!”</text>
+    </g>
+  </g>
+  <path d="M1091 555 Q1119 559 1148 554" fill="none" stroke="#f8f8f8" stroke-width="3" stroke-linecap="round"/>
+</svg>
