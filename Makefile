@@ -1,8 +1,12 @@
 build:
-	@cargo build
+	@cargo build --workspace --locked
 
 test:
-	@cargo nextest run --all-features
+	@cargo nextest run --workspace --all-features --locked --test-threads 1
+	@cargo test --doc --workspace --all-features --locked
+
+doc-test:
+	@cargo test --doc --workspace --all-features --locked
 
 check-agent-sync:
 	@cmp -s CLAUDE.md AGENTS.md || { \
@@ -30,4 +34,4 @@ release:
 update-submodule:
 	@git submodule update --init --recursive --remote
 
-.PHONY: build test check-agent-sync release update-submodule
+.PHONY: build test doc-test check-agent-sync release update-submodule

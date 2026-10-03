@@ -38,7 +38,9 @@ jobs:
           fetch-depth: 0
           submodules: recursive
       - name: Install Rust
-        run: rustup toolchain install stable --component llvm-tools-preview
+        run: |
+          rustup toolchain install 1.98.1 --component llvm-tools-preview --component clippy --component rustfmt
+          rustup toolchain install nightly --component rustfmt
       - name: Install cargo-llvm-cov
         uses: taiki-e/install-action@cargo-llvm-cov
       - name: install nextest
@@ -47,13 +49,15 @@ jobs:
       # - name: Install Protoc
       #   uses: arduino/setup-protoc@v2
       - name: Check code format
-        run: cargo fmt --all -- --check
+        run: cargo +nightly fmt --all -- --check
       - name: Check the package for errors
-        run: cargo check --all
+        run: cargo check --workspace --locked
       - name: Lint rust sources
-        run: cargo clippy --all-targets --all-features --tests --benches -- -D warnings
+        run: cargo clippy --workspace --all-targets --all-features --locked -- -D warnings
       - name: Execute rust tests
-        run: cargo nextest run --all-features
+        run: cargo nextest run --workspace --all-features --locked --test-threads 1
+      - name: Execute documentation tests
+        run: cargo test --doc --workspace --all-features --locked
       - name: Generate a changelog
         uses: orhun/git-cliff-action@v4
         id: git-cliff

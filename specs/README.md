@@ -1,3 +1,5 @@
 # Specs
 
-All specs that for AI to generate code.
+Specifications and reviews that guide implementation and verification.
+
+See the [specification index](index.md) for the current documents.
